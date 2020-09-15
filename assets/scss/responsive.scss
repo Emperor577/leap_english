@@ -1,0 +1,51 @@
+$xlgDesktop : 2560px;
+$lgDesktop  : 1980px;
+$mdDesktop  : 1366px;
+$smDesktop  : 1024px;
+$xlgTablet  : 992px;
+$lgTablet   : 800px;
+$smTablet   : 768px;
+$lgMobile   : 580px;
+$mdMobile   : 475px;
+$smMobile   : 320px;
+
+@media only screen and (min-width: $smMobile) and (max-width: $lgMobile){
+  .home {
+    .home-wrapper {
+      width: 100%;
+      .home-content {
+        .bg-layout {
+          img {
+            object-fit: cover;
+          }
+        }
+        .bg-content {
+          h1 {
+            font-size: 20px;
+          }
+          p {
+            width: 100%;
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+  .course {
+    .course-wrapper {
+      width: 100%;
+      .course-content {
+        .course-title {
+          align-items: center;
+        }
+        .carousel-item {
+          width: 90.2vw;
+        }
+        .carousel-wrapper .arrow-right {
+          width: 40px;
+          height: 40px;
+        }
+      }
+    }
+  }
+}
