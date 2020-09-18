@@ -1,0 +1,163 @@
+// PRICE TABLE
+<div class="price-table">
+            <div class="column">
+              <div class="row">class</div>
+              <div class="row">Hours</div>
+              <div class="row">Individual (1 kishi)</div>
+              <div class="row">Couple (2 kishi)</div>
+              <div class="row">Group (3 kishi)</div>
+              <div class="row">Consultation</div>
+              <div class="row">
+                <span class="main">Academic Support</span>
+                <span class="secondary">(for student only)</span>
+              </div>
+            </div>
+            <div class="column">
+              <div class="row">Newbie</div>
+              <div class="row">1 hour</div>
+              <div class="row">50 000</div>
+              <div class="row">40 000</div>
+              <div class="row">35 000</div>
+              <div class="row">Free</div>
+              <div class="row">
+                <font-awesome-icon :icon="['fas', 'check']" />
+              </div>
+            </div>
+            <div class="column">
+              <div class="row">Amateur</div>
+              <div class="row">8 hours</div>
+              <div class="row">
+                <span class="last-price">400 000</span>
+                <span class="current-price">390 000</span>
+              </div>
+              <div class="row">
+                <span class="last-price">320 000</span>
+                <span class="current-price">315 000</span>
+              </div>
+              <div class="row">280 000</div>
+              <div class="row">Free</div>
+              <div class="row">
+                <font-awesome-icon :icon="['fas', 'check']" />
+              </div>
+            </div>
+            <div class="column">
+              <div class="row">Month</div>
+              <div class="row">12 hours</div>
+              <div class="row">
+                <span class="last-price">600 000</span>
+                <span class="current-price">585 000</span>
+              </div>
+              <div class="row">
+                <span class="last-price">480 000</span>
+                <span class="current-price">470 000</span>
+              </div>
+              <div class="row">
+                <span class="last-price">420 000</span>
+                <span class="current-price">415 000</span>
+              </div>
+              <div class="row">
+                Free
+              </div>
+              <div class="row">
+                <font-awesome-icon :icon="['fas', 'check']" />
+              </div>
+            </div>
+            <div class="column">
+              <div class="row">Intensive</div>
+              <div class="row">20 hours</div>
+              <div class="row">
+                <span class="last-price">1 000 000</span>
+                <span class="current-price">950 000</span>
+              </div>
+              <div class="row">
+                <span class="last-price">800 000</span>
+                <span class="current-price">760 000</span>
+              </div>
+              <div class="row">
+                <span class="last-price">700 000</span>
+                <span class="current-price">665 000</span>
+              </div>
+              <div class="row">
+                Free
+              </div>
+              <div class="row">
+                <font-awesome-icon :icon="['fas', 'check']" />
+              </div>
+            </div>
+          </div>
+
+          // PRICE STYLE
+          .price-table {
+                  width: 100%;
+                  height: 60%;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  .column {
+                    width: 20%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    &:nth-of-type(even) {
+                      .row:first-child {
+                        background: rgb(0, 208, 160);
+                        color: #fff;
+                        font-size: 20px;
+                        text-transform: capitalize;
+                        font-weight: 700;
+                        letter-spacing: 2px;
+                      }
+                      .row {
+                        background: rgba(0, 208, 160, 0.25);
+                      }
+                    }
+                    &:nth-of-type(odd) {
+                      .row:first-child {
+                        background: rgb(255, 192, 50);
+                        color: #fff;
+                        font-size: 20px;
+                        text-transform: capitalize;
+                        font-weight: 700;
+                        letter-spacing: 2px;
+                      }
+                      .row {
+                        background: rgba(255, 192, 50, 0.25);
+                      }
+                    }
+                    &:first-child {
+                      .row {
+                        font-weight: bold;
+                        &:last-child {
+                          display: flex;
+                          flex-direction: column;
+                          .secondary {
+                            font-weight: 400;
+                            font-size: 16px;
+                          }
+                        }
+                      }
+                    }
+                    .row {
+                      width: 100%;
+                      height: calc(100% / 7);
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                      border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+                      font-weight: 500;
+                      .last-price {
+                        font-size: 12px;
+                        font-weight: 400;
+                        text-decoration: line-through;
+                        text-decoration-color: red;
+                        margin-right: 10px;
+                      }
+                    }
+                  }
+                }
+
+
+free pick resources
+<a href='https://www.freepik.com/vectors/education'>Education vector created by stories - www.freepik.com</a>

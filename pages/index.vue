@@ -37,92 +37,7 @@
       <div class="price-wrapper">
         <div class="price-content">
           <h2>Our prices</h2>
-          <div class="price-table">
-            <div class="column">
-              <div class="row">class</div>
-              <div class="row">Hours</div>
-              <div class="row">Individual (1 kishi)</div>
-              <div class="row">Couple (2 kishi)</div>
-              <div class="row">Group (3 kishi)</div>
-              <div class="row">Consultation</div>
-              <div class="row">
-                <span class="main">Academic Support</span>
-                <span class="secondary">(for student only)</span>
-              </div>
-            </div>
-            <div class="column">
-              <div class="row">Newbie</div>
-              <div class="row">1 hour</div>
-              <div class="row">50 000</div>
-              <div class="row">40 000</div>
-              <div class="row">35 000</div>
-              <div class="row">Free</div>
-              <div class="row">
-                <font-awesome-icon :icon="['fas', 'check']" />
-              </div>
-            </div>
-            <div class="column">
-              <div class="row">Amateur</div>
-              <div class="row">8 hours</div>
-              <div class="row">
-                <span class="last-price">400 000</span>
-                <span class="current-price">390 000</span>
-              </div>
-              <div class="row">
-                <span class="last-price">320 000</span>
-                <span class="current-price">315 000</span>
-              </div>
-              <div class="row">280 000</div>
-              <div class="row">Free</div>
-              <div class="row">
-                <font-awesome-icon :icon="['fas', 'check']" />
-              </div>
-            </div>
-            <div class="column">
-              <div class="row">Month</div>
-              <div class="row">12 hours</div>
-              <div class="row">
-                <span class="last-price">600 000</span>
-                <span class="current-price">585 000</span>
-              </div>
-              <div class="row">
-                <span class="last-price">480 000</span>
-                <span class="current-price">470 000</span>
-              </div>
-              <div class="row">
-                <span class="last-price">420 000</span>
-                <span class="current-price">415 000</span>
-              </div>
-              <div class="row">
-                Free
-              </div>
-              <div class="row">
-                <font-awesome-icon :icon="['fas', 'check']" />
-              </div>
-            </div>
-            <div class="column">
-              <div class="row">Intensive</div>
-              <div class="row">20 hours</div>
-              <div class="row">
-                <span class="last-price">1 000 000</span>
-                <span class="current-price">950 000</span>
-              </div>
-              <div class="row">
-                <span class="last-price">800 000</span>
-                <span class="current-price">760 000</span>
-              </div>
-              <div class="row">
-                <span class="last-price">700 000</span>
-                <span class="current-price">665 000</span>
-              </div>
-              <div class="row">
-                Free
-              </div>
-              <div class="row">
-                <font-awesome-icon :icon="['fas', 'check']" />
-              </div>
-            </div>
-          </div>
+          <price-tab />
         </div>
       </div>
     </section>
@@ -147,12 +62,14 @@ import Carousel from '~/components/carousel'
 import FeedbackCarousel from '~/components/feedbackCarousel'
 import dialogForm from '~/components/dialogForm'
 import dialogVideo from '~/components/dialogVideo'
+import PriceTab from '~/components/price-tab'
 export default {
   components: {
     Carousel,
     dialogForm,
     dialogVideo,
     FeedbackCarousel,
+    PriceTab,
   },
   computed: {
     dialogForm() {
